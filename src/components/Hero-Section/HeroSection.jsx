@@ -10,21 +10,22 @@ const HeroSection = () => {
 				<Row>
 					<Col lg='6' md='6'>
 						<div className='hero__content'>
-							<h2 className='mb-4 hero__title'>
+							<h2 className='mb-3 hero__title'>
 								Anytime Anywhere <br /> Learn and Get <br />{" "}
 								Indian Government Certification
 							</h2>
 							<p className='mb-5'>
-								Lorem ipsum dolor sit amet consectetur <br />{" "}
-								adipisicing elit. Aut saepe voluptatum earum
-								delectus <br /> deserunt id iste, quas officiis
-								et repellat!
+								Join us for government-certified courses, where
+								education is free for all. <br /> We provide
+								high-quality learning supported by the Indian
+								Government, helping you build skills and earn
+								credentials that shape your future.
 							</p>
 						</div>
-						<div className='search'>
+						{/* <div className='search'>
 							<input type='text' placeholder='Search' />
 							<button className='btn'>Search</button>
-						</div>
+						</div> */}
 					</Col>
 
 					<Col lg='6' md='6'>
