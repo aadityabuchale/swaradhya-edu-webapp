@@ -7,7 +7,7 @@ import "./about.css";
 
 const AboutUs = () => {
 	return (
-		<section className='about-us'>
+		<section className='about-us' id='#about'>
 			<Container>
 				<Row>
 					<Col lg='6' md='6'>
@@ -33,7 +33,7 @@ const AboutUs = () => {
 							</p>
 
 							<div className='about__counter'>
-								<div className=' d-flex gap-5 align-items-center'>
+								<div className=' d-flex gap-5 align-items-center justify-content-center'>
 									<div className='single__counter'>
 										<span className='counter'>
 											<CountUp
@@ -65,7 +65,7 @@ const AboutUs = () => {
 									</div>
 								</div>
 
-								<div className=' d-flex gap-5 align-items-center'>
+								<div className=' d-flex gap-5 align-items-center justify-content-center'>
 									{/* <div className='single__counter'>
 										<span className='counter'>
 											<CountUp
