@@ -9,28 +9,28 @@ import CourseCard from "./CourseCard";
 const coursesData = [
 	{
 		id: "01",
-		title: "Web Design BootCamp-2022 for Beginners",
-		lesson: 12,
-		students: 12.5,
-		rating: 5.9,
+		title: "Web Developement BootCamp for Beginners",
+		lesson: 5,
+		students: 20,
+		rating: 3.8,
 		imgUrl: courseImg1,
 	},
 
 	{
 		id: "02",
-		title: "Professional Graphics Design, PhotoShop, Adobe XD, Figma",
-		lesson: 12,
-		students: 12.5,
-		rating: 5.9,
+		title: "CCTV Repairing and architecture",
+		lesson: 8,
+		students: 50,
+		rating: 4.2,
 		imgUrl: courseImg2,
 	},
 
 	{
 		id: "03",
-		title: "UI/UX BootCamp for Beginners in 2022",
-		lesson: 12,
-		students: 12.5,
-		rating: 5.9,
+		title: "Personality Development and Communication",
+		lesson: 7,
+		students: 100,
+		rating: 4.5,
 		imgUrl: courseImg3,
 	},
 ];

@@ -18,6 +18,13 @@
 	border-radius: 15px;
 }
 
+.single__counter {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+}
+
 .about__content h2 {
 	font-weight: 600;
 }
