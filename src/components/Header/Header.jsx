@@ -1,28 +1,24 @@
 import React, { useRef } from "react";
 import { Container } from "reactstrap";
 import "./header.css";
+import { Link } from "react-scroll"; // Import Link for smooth scrolling
 
 const navLinks = [
 	{
 		display: "Home",
-		url: "#",
+		url: "hero", // The section names correspond to the Element names in Home.jsx
 	},
 	{
 		display: "About",
-		url: "",
+		url: "aboutus",
 	},
-
 	{
 		display: "Courses",
-		url: "#",
+		url: "courses",
 	},
 	{
-		display: "Pages",
-		url: "#",
-	},
-	{
-		display: "Blog",
-		url: "#",
+		display: "Features",
+		url: "features",
 	},
 ];
 
@@ -50,7 +46,16 @@ const Header = () => {
 							<ul className='nav__list'>
 								{navLinks.map((item, index) => (
 									<li key={index} className='nav__item'>
-										<a href={item.url}>{item.display}</a>
+										{/* Use Link component from react-scroll */}
+										<Link
+											to={item.url} // The name of the section in Home.jsx
+											spy={true}
+											smooth={true}
+											offset={70} // Optional, adjusts scroll position to account for fixed headers
+											duration={500}
+										>
+											{item.display}
+										</Link>
 									</li>
 								))}
 							</ul>

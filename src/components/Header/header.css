@@ -18,10 +18,11 @@
 	color: #0a2b1e;
 	text-decoration: none;
 	transition: 0.3s;
+	cursor: pointer;
 }
 
 .nav__item a:hover {
-	color: #17bf9e;
+	color: #17bf9e !important;
 }
 
 .nav__right p {

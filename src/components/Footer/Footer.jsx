@@ -1,48 +1,46 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
-
+import { Link } from "react-scroll"; // Import Link for smooth scrolling
 import "./footer.css";
 
 const footerQuickLinks = [
 	{
 		display: "Home",
-		url: "#",
+		url: "hero",
 	},
 	{
 		display: "About US",
-		url: "#",
+		url: "aboutus",
 	},
 
 	{
 		display: "Courses",
-		url: "#",
+		url: "courses",
 	},
 
 	{
-		display: "Blog",
-		url: "#",
+		display: "Features",
+		url: "features",
 	},
 ];
 
 const footerInfoLinks = [
-	{
-		display: "Privacy Policy",
-		url: "#",
-	},
-	{
-		display: "Membership",
-		url: "#",
-	},
-
-	{
-		display: "Purchases Guide",
-		url: "#",
-	},
-
-	{
-		display: "Terms of Service",
-		url: "#",
-	},
+	// {
+	// 	display: "Privacy Policy",
+	// 	url: "#",
+	// },
+	// {
+	// 	display: "Membership",
+	// 	url: "#",
+	// },
+	// {
+	// 	display: "Purchases Guide",
+	// 	url: "#",
+	// },
+	// {
+	// 	display: "Terms of Service",
+	// 	url: "#",
+	// },
 ];
 
 const Footer = () => {
@@ -50,7 +48,7 @@ const Footer = () => {
 		<footer className='footer'>
 			<Container>
 				<Row>
-					<Col lg='3' md='6' className='mb-4'>
+					<Col lg='4' md='6' className='mb-4'>
 						<h2
 							className=' d-flex align-items-center justify-content-center justify-content-sm-start gap-1'
 							style={{ fontSize: 20 }}
@@ -63,34 +61,34 @@ const Footer = () => {
 							<span>
 								{" "}
 								<a href='facebook.com'>
-									<i class='ri-facebook-line'></i>
+									<i className='ri-facebook-line'></i>
 								</a>
 							</span>
 
 							<span>
 								{" "}
 								<a href='facebook.com'>
-									<i class='ri-instagram-line'></i>
+									<i className='ri-instagram-line'></i>
 								</a>
 							</span>
 
 							<span>
 								{" "}
 								<a href='facebook.com'>
-									<i class='ri-linkedin-line'></i>
+									<i className='ri-linkedin-line'></i>
 								</a>
 							</span>
 
 							<span>
 								{" "}
 								<a href='facebook.com'>
-									<i class='ri-twitter-line'></i>
+									<i className='ri-twitter-line'></i>
 								</a>
 							</span>
 						</div>
 					</Col>
 
-					<Col lg='3' md='6' className='mb-4'>
+					<Col lg='4' md='6' className='mb-4'>
 						<h6 className='fw-bold'>Explore</h6>
 						<ListGroup className='link__list'>
 							{footerQuickLinks.map((item, index) => (
@@ -99,13 +97,21 @@ const Footer = () => {
 									className='border-0 ps-0 link__item'
 								>
 									{" "}
-									<a href={item.url}>{item.display}</a>
+									<Link
+										to={item.url} // The name of the section in Home.jsx
+										spy={true}
+										smooth={true}
+										offset={70} // Optional, adjusts scroll position to account for fixed headers
+										duration={500}
+									>
+										{item.display}
+									</Link>
 								</ListGroupItem>
 							))}
 						</ListGroup>
 					</Col>
 
-					<Col lg='3' md='6' className='mb-4'>
+					{/* <Col lg='3' md='6' className='mb-4'>
 						<h6 className='fw-bold'>Information</h6>
 						<ListGroup className='link__list'>
 							{footerInfoLinks.map((item, index) => (
@@ -118,12 +124,12 @@ const Footer = () => {
 								</ListGroupItem>
 							))}
 						</ListGroup>
-					</Col>
+					</Col> */}
 
-					<Col lg='3' md='6'>
+					<Col lg='4' md='6'>
 						<h6 className='fw-bold'>Get in Touch</h6>
 
-						<p>Address: Parbhani Maharashtra</p>
+						<p>Address: Parbhani,Maharashtra(431401)</p>
 						<p> Phone: +91 8888358117 </p>
 						<p>Email: contact@swaradhyamultiworkskills.in</p>
 					</Col>
