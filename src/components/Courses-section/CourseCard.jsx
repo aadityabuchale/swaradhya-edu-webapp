@@ -10,7 +10,7 @@ const CourseCard = (props) => {
 			</div>
 
 			<div className='course__details'>
-				<h6 className='course__title mb-4'>{title}</h6>
+				<h6 className='course__title mb-3'>{title}</h6>
 
 				<div className=' d-flex justify-content-between align-items-center'>
 					<p className='lesson d-flex align-items-center gap-1'>
@@ -18,17 +18,17 @@ const CourseCard = (props) => {
 					</p>
 
 					<p className='students d-flex align-items-center gap-1'>
-						<i className='ri-user-line'></i> {students}K
+						<i className='ri-user-line'></i> {students}
 					</p>
 				</div>
 
 				<div className=' d-flex justify-content-between align-items-center'>
 					<p className='rating d-flex align-items-center gap-1'>
-						<i className='ri-star-fill'></i> {rating}K
+						<i className='ri-star-fill'></i> {rating}
 					</p>
 
 					<p className='enroll d-flex align-items-center gap-1'>
-						<a href='#'> Enroll Now</a>
+						<span> Visit Now</span>
 					</p>
 				</div>
 			</div>

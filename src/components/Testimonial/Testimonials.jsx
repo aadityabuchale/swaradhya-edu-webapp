@@ -21,7 +21,7 @@ const Testimonials = () => {
 				<Row>
 					<Col lg='10' md='12' className='m-auto'>
 						<div className='testimonial__wrapper d-flex justify-content-between align-items-center flex-lg-row flex-column'>
-							<div className='testimonial__img w-50'>
+							<div className='testimonial__img w-50 pe-3'>
 								<img src={img} alt='' className='w-100' />
 							</div>
 
@@ -31,7 +31,10 @@ const Testimonials = () => {
 								<Slider {...settings}>
 									<div>
 										<div className='single__testimonial'>
-											<h6 className='mb-3 fw-bold'>
+											<h6
+												className='mb-3 fw-bold'
+												style={{ color: "#494949" }}
+											>
 												Fantastic Learning Experience
 											</h6>
 											<p>
@@ -42,7 +45,16 @@ const Testimonials = () => {
 												concepts effectively. I feel
 												more confident in my skills now!
 											</p>
-
+											<div className='rating-stars d-flex gap-1 justify-content-md-start justify-content-center'>
+												{Array.from({ length: 4 }).map(
+													(a, idx) => (
+														<i
+															key={idx}
+															className='ri-star-fill'
+														></i>
+													)
+												)}
+											</div>
 											<div className='student__info mt-4'>
 												<h6 className='fw-bold'>
 													Ramesh Vairagar
@@ -54,7 +66,10 @@ const Testimonials = () => {
 
 									<div>
 										<div className='single__testimonial'>
-											<h6 className='mb-3 fw-bold'>
+											<h6
+												className='mb-3 fw-bold'
+												style={{ color: "#494949" }}
+											>
 												Highly Recommend!
 											</h6>
 											<p>
@@ -65,7 +80,16 @@ const Testimonials = () => {
 												has already benefited me in my
 												career.
 											</p>
-
+											<div className='rating-stars d-flex gap-1 justify-content-md-start justify-content-center'>
+												{Array.from({ length: 5 }).map(
+													(a, idx) => (
+														<i
+															key={idx}
+															className='ri-star-fill'
+														></i>
+													)
+												)}
+											</div>
 											<div className='student__info mt-4'>
 												<h6 className='fw-bold'>
 													Ram Jadhav
@@ -77,7 +101,10 @@ const Testimonials = () => {
 
 									<div>
 										<div className='single__testimonial'>
-											<h6 className='mb-3 fw-bold'>
+											<h6
+												className='mb-3 fw-bold'
+												style={{ color: "#494949" }}
+											>
 												Best Course I've Taken
 											</h6>
 											<p>
@@ -88,7 +115,16 @@ const Testimonials = () => {
 												helpful in solidifying my
 												understanding of the topics.
 											</p>
-
+											<div className='rating-stars d-flex gap-1 justify-content-md-start justify-content-center'>
+												{Array.from({ length: 4 }).map(
+													(a, idx) => (
+														<i
+															key={idx}
+															className='ri-star-fill'
+														></i>
+													)
+												)}
+											</div>
 											<div className='student__info mt-4'>
 												<h6 className='fw-bold'>
 													Shekhar Patil
