@@ -129,9 +129,25 @@ const Footer = () => {
 					<Col lg='4' md='6'>
 						<h6 className='fw-bold'>Get in Touch</h6>
 
-						<p>Address: Parbhani,Maharashtra(431401)</p>
-						<p> Phone: +91 8888358117 </p>
-						<p>Email: contact@swaradhyamultiworkskills.in</p>
+						<p>
+							Address:{" "}
+							<a
+								href='https://www.google.com/maps?q=parbhani+maharashtra'
+								target='_blank'
+							>
+								Parbhani, Maharashtra (431401)
+							</a>
+						</p>
+						<p>
+							Phone:{" "}
+							<a href='tel:+918888358117'>+91 8888358117</a>
+						</p>
+						<p>
+							Email:{" "}
+							<a href='mailto:contact@swaradhyamultiworkskills.in'>
+								contact@swaradhyamultiworkskills.in
+							</a>
+						</p>
 					</Col>
 				</Row>
 			</Container>

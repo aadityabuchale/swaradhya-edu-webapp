@@ -47,6 +47,16 @@ i {
 	color: #17bf9e;
 }
 
+a {
+	text-decoration: none !important;
+	color: #0a2b1e !important;
+}
+
+a:hover {
+	transition: 0.2s ease-in-out;
+	color: #17bf9e !important;
+}
+
 @media screen and (max-width: 576px) {
 	.row {
 		text-align: center !important;
