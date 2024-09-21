@@ -2,8 +2,32 @@ import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import heroImg from "../../assests/images/hero-img1.png";
 import "./hero-section.css";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP);
 
 const HeroSection = () => {
+	useGSAP(() => {
+		const timeline = gsap.timeline();
+
+		timeline
+			.to(".hero__content", {
+				y: -30,
+				duration: 0.7,
+				opacity: 1,
+			})
+			.to(
+				".hero__img",
+				{
+					y: -50,
+					duration: 0.7,
+					opacity: 1,
+				},
+				"<0.25"
+			);
+	});
+
 	return (
 		<section>
 			<Container>
