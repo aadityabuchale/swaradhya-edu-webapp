@@ -4,8 +4,15 @@
 }
 
 .hero__content {
-	padding-top: 80px;
+	padding-top: 160px;
+	opacity: 0;
 }
+
+.hero__img {
+	padding-top: 80px;
+	opacity: 0;
+}
+
 .search input {
 	border: none;
 	outline: none;
@@ -20,4 +27,14 @@
 	align-items: center;
 	border-radius: 50px;
 	margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+	.hero__content {
+		padding-top: 50px;
+	}
+
+	.hero__img {
+		padding-top: 0px;
+	}
 }

@@ -1,7 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Container } from "reactstrap";
 import "./header.css";
 import { Link } from "react-scroll"; // Import Link for smooth scrolling
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const navLinks = [
 	{
@@ -24,14 +26,24 @@ const navLinks = [
 
 const Header = () => {
 	const menuRef = useRef();
+	const logoref = useRef();
+	const menuToggle = () => {
+		menuRef.current.classList.toggle("active__menu");
+		logoref.current.classList.toggle("hide__logo");
+	};
 
-	const menuToggle = () => menuRef.current.classList.toggle("active__menu");
+	useGSAP(() => {
+		gsap.to(".header", {
+			y: 0,
+			delay: 1,
+		});
+	});
 
 	return (
 		<header className='header'>
 			<Container>
 				<div className='navigation d-flex align-items-center justify-content-between'>
-					<div className='logo'>
+					<div className='logo' ref={logoref}>
 						<h2 className=' d-flex align-items-center gap-1'>
 							<i className='ri-macbook-line'></i> Swaradhya MWS
 						</h2>
